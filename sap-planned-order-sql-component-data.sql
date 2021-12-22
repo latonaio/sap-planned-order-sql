@@ -26,6 +26,6 @@ CREATE TABLE `sap-planned-order-sql-component-data`
   `MRPController`                         varchar(3) DEFAULT NULL,
   `PlannedOrderLastChangeDateTime`        datetime DEFAULT NULL,
   PRIMARY KEY (`PlannedOrder`),
-  CONSTRAINT `PlannedOrder_fk` FOREIGN KEY (`PlannedOrder`) REFERENCES`sap-planned-order-header-data`(`PlannedOrder`),
+  CONSTRAINT `PlannedOrder_fk` FOREIGN KEY (`PlannedOrder`) REFERENCES`sap-planned-order-header-data`(`PlannedOrder`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
