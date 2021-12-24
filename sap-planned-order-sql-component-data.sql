@@ -1,6 +1,6 @@
 CREATE TABLE `sap-planned-order-component-data`
 (
-  `PlannedOrder`                          varchar(10) DEFAULT NULL,
+  `PlannedOrder`                          NOT NULL,
   `Reservation`                           varchar(10) DEFAULT NULL,
   `ReservationItem`                       varchar(4) DEFAULT NULL,
   `BOMItem`                               varchar(8) DEFAULT NULL,

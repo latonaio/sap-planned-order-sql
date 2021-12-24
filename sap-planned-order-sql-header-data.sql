@@ -1,6 +1,6 @@
 CREATE TABLE `sap-planned-order-header-data`
 (
-		`PlannedOrder`                            varchar(10) DEFAULT NULL,
+		`PlannedOrder`                            varchar(10) NOT NULL,
 		`PlannedOrderType`                        varchar(4) DEFAULT NULL,
 		`PlannedOrderProfile`                     varchar(4) DEFAULT NULL,
 		`Material`                                varchar(40) DEFAULT NULL,
