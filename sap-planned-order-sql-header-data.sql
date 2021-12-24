@@ -1,4 +1,4 @@
-CREATE TABLE `sap-planned-order-sql-header-data`
+CREATE TABLE `sap-planned-order-header-data`
 (
 		`PlannedOrder`                            varchar(10) DEFAULT NULL,
 		`PlannedOrderType`                        varchar(4) DEFAULT NULL,

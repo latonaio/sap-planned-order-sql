@@ -1,4 +1,4 @@
-CREATE TABLE `sap-planned-order-sql-component-data`
+CREATE TABLE `sap-planned-order-component-data`
 (
   `PlannedOrder`                          varchar(10) DEFAULT NULL,
   `Reservation`                           varchar(10) DEFAULT NULL,
