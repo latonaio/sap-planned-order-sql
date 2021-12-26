@@ -1,6 +1,6 @@
-CREATE TABLE `sap-planned-order-component-data`
+CREATE TABLE `sap_planned_order_component_data`
 (
-  `PlannedOrder`                          NOT NULL,
+  `PlannedOrder`                          varchar(10) NOT NULL,
   `Reservation`                           varchar(10) DEFAULT NULL,
   `ReservationItem`                       varchar(4) DEFAULT NULL,
   `BOMItem`                               varchar(8) DEFAULT NULL,
@@ -11,7 +11,7 @@ CREATE TABLE `sap-planned-order-component-data`
   `BillOfMaterialInternalID`              varchar(8) DEFAULT NULL,
   `BillOfMaterialVariant`                 varchar(2) DEFAULT NULL,
   `Material`                              varchar(40) DEFAULT NULL,
-  `MatlCompRequirementDate`               date DEFAULT NULL,
+  `MatlCompRequirementDate`               varchar(80) DEFAULT NULL,
   `GoodsMovementEntryQty`                 varchar(15) DEFAULT NULL,
   `EntryUnit`                             varchar(3) DEFAULT NULL,
   `RequiredQuantity`                      varchar(15) DEFAULT NULL,
@@ -24,8 +24,8 @@ CREATE TABLE `sap-planned-order-component-data`
   `StorageLocation`                       varchar(4) DEFAULT NULL,
   `SupplyArea`                            varchar(10) DEFAULT NULL,
   `MRPController`                         varchar(3) DEFAULT NULL,
-  `PlannedOrderLastChangeDateTime`        datetime DEFAULT NULL,
+  `PlannedOrderLastChangeDateTime`        varchar(80) DEFAULT NULL,
   PRIMARY KEY (`PlannedOrder`),
-  CONSTRAINT `PlannedOrder_fk` FOREIGN KEY (`PlannedOrder`) REFERENCES`sap-planned-order-header-data`(`PlannedOrder`)
+  CONSTRAINT `SAPPlannedOrderComponentData_fk` FOREIGN KEY (`PlannedOrder`) REFERENCES`sap_planned_order_header_data`(`PlannedOrder`)
 ) ENGINE = InnoDB
  DEFAULT CHARSET = utf8mb4;
